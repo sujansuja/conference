@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.page {
+    font-family: Roboto, 'sans-serif';
+    font-size: 12px;
+    /* overflow: hidden; */
+}
+
+.navbar {
+    position: sticky;
+    top: 0px;
+    background: #023e86;
+    padding: 10px 5%;
+    overflow: auto;
+    box-shadow: 0 0 20px 20px rgba(114, 114, 114, 0.621);
+}
+
+.navbar h1 {
+    text-align: center;
+    padding: 20px 40px;
+    font-size: 2.5em;
+    color: white;
+}
+
+
+/* width */
+.navbar .navbar-links::-webkit-scrollbar {
+    width: 2px;
+    height: 4px;
+    border-radius: 10px;
+}
+
+/* Track */
+.navbar .navbar-links::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background: #f1f1f1;
+}
+
+/* Handle */
+.navbar .navbar-links::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: #000;
+}
+
+/* Handle on hover */
+.navbar .navbar-links::-webkit-scrollbar-thumb:hover {
+    border-radius: 10px;
+    background: #242424;
+}
+
+.navbar .navbar-links {
+    width: 100%;
+    min-width: 200px;
+    /* border: 1px solid #000; */
+    display: inline-flex;
+    overflow-x: auto;
+    gap: 10px;
+    position: relative;
+    font-size: 1.6em;
+    margin: 0 auto;
+}
+
+
+
+.navbar .navbar-links a:hover ,
+    .navbar .navbar-links a:focus {
+    text-decoration: underline;
+}
+
+.navbar .navbar-links a {
+    flex: 0 0 auto;
+    background-color: #ff802c;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    min-width: 10px;
+    margin: 0px auto;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    position: relative;
+    font-weight: 600;
+    font-size: 1.1em;
+}
+
+.page>section>div {
+    max-width: 80%;
+    margin: auto;
+    padding: 20px;
+    background-color: rgb(223, 235, 255);
+    font-size: 1.3em;
+}
+
+.page>section>div table td,
+.page>section>div table th {
+    padding: 10px 20px;
+    font-size: 1.3em;
+}
+
+.page>section>div table {
+    border: 1px solid blue;
+    margin: auto;
+    padding: 10px;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+.page>section>div p {
+    /* line-height: 30px; */
+    font-size: 1.5em;
+    text-align: justify;
+}
+
+.page>section>div h1::first-letter {
+    font-size: 1.8em;
+    color: rgb(66, 66, 69);
+}
+
+.page>section>div h3 {
+    font-size: 1.6em;
+}
+
+.page>section>div ul {
+    padding-left: 60px;
+    font-size: 1.4em;
+}
+
+.page>section>div {
+    font-size: 1.2em;
+    scroll-margin: 180px;
+}
+
+.page>section>div h1 {
+    font-size: 2.5em;
+}
+
+.tracks {
+    padding-left: 30px;
+}
+
+a {
+    color: royalblue;
+}
+
+@media (width < 300px) {
+    .page {
+        font-size: 10px;
+        padding: 0;
+    }
+}
+
+@media (width < 700px) {
+    .page>section>div {
+        scroll-margin: 240px;
+    }
+}
+
+@media (width < 500px) {
+    .page>section>div {
+        scroll-margin: 280px;
+    }
+
+    .navbar {
+        padding: 0px 10px 10px;
+    }
+
+    .navbar h1 {
+        padding: 20px 5px;
+    }
+
+    .navbar .navbar-links {
+        gap: 5px;
+    }
+
+    .page>section>div {
+        max-width: 100%;
+        padding-inline: 30px;
+    }
+
+    .page>section>div table td,
+    .page>section>div table th {
+        padding: 5px 10px;
+    }
+}
+
+@media (width < 450px) {
+    .page>section>div {
+        scroll-margin: 280px;
+    }
+}
+
+@media (width < 400px) {
+    .page>section>div {
+        scroll-margin: 300px;
+    }
+}
+
+@media (width < 300px) {
+    .page>section>div {
+        scroll-margin: 260px;
+    }
+}
